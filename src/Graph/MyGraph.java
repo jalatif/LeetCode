@@ -150,15 +150,23 @@ public class MyGraph {
 
         vGraph.addNode(s);
     }
-
-    public Iterator<Vertex> getVertices() {
+    
+    public Iterator<Vertex> getVertexIterator() {
         return vertices.iterator();
     }
-
-    public Iterator<Edge> getEdges() {
-        return edges.iterator();
+    
+    public List<Vertex> getVertices() {
+        return vertices;
     }
 
+    public Iterator<Edge> getEdgeIterator() {
+        return edges.iterator();
+    }
+    
+    public List<Edge> getEdges() {
+        return edges;
+    }
+    
     public void displayGraph(boolean close) {
         for (Node node: vGraph.getNodeSet())
             node.setAttribute("ui.label", node.getId());

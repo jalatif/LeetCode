@@ -20,7 +20,7 @@ public class ReverseGraph {
         int indegree[] = new int[size];
         Queue<QueueItem> queue = new LinkedList<QueueItem>();
         List<String> adjacent;
-        Iterator<Vertex> vertexIterator = graph.getVertices();
+        Iterator<Vertex> vertexIterator = graph.getVertexIterator();
         Vertex vertices[] = new Vertex[size];
         HashMap<Vertex, Integer> vertex_indices = new HashMap<Vertex, Integer>();
 
@@ -102,7 +102,7 @@ public class ReverseGraph {
     public static void dfs(MyGraph graph) {
         int size = graph.size();
         int indegree[] = new int[size];
-        Iterator<Vertex> vertexIterator = graph.getVertices();
+        Iterator<Vertex> vertexIterator = graph.getVertexIterator();
         vertices = new Vertex[size];
         vertex_indices = new HashMap<Vertex, Integer>();
         marked = new boolean[size];
@@ -154,15 +154,15 @@ public class ReverseGraph {
         graph2.addVertex("10");
         graph2.addVertex("11");
 
-        graph2.addEdge("11", "2");
-        graph2.addEdge("11", "9");
-        graph2.addEdge("11", "10");
-        graph2.addEdge("8", "9");
-        graph2.addEdge("7", "8");
-        graph2.addEdge("7", "11");
-        graph2.addEdge("5", "11");
-        graph2.addEdge("3", "8");
-        graph2.addEdge("3", "10");
+        graph2.addEdge("11", "2", 5);
+        graph2.addEdge("11", "9", 10);
+        graph2.addEdge("11", "10", 1);
+        graph2.addEdge("8", "9", 2);
+        graph2.addEdge("7", "8", 9);
+        graph2.addEdge("7", "11", 8);
+        graph2.addEdge("5", "11", 3);
+        graph2.addEdge("3", "8", 6);
+        graph2.addEdge("3", "10", 11);
 
         //graph2.displayGraph(true);
         //topolicalSort(graph2);

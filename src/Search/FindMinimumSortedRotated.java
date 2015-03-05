@@ -1,7 +1,5 @@
 package Search;
 
-import Tree.MaxPathSum;
-
 /**
  * Created by manshu on 1/11/15.
  */
@@ -33,6 +31,6 @@ public class FindMinimumSortedRotated {
         int arr[] = {11, 4, 5, 6, 7, 8, 9, 10};
         int arr2[] = {10,1,10,10,10};
         int arr3[] = {3, 3, 1};
-        System.out.println(findMin(arr3));
+        System.out.println(findMin(arr));
     }
 }

@@ -9,9 +9,9 @@ import java.util.Queue;
  * Created by manshu on 12/27/14.
  */
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
     public TreeNode(int x) {
         val = x;
         left = null;
