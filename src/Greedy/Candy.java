@@ -6,23 +6,6 @@ import java.util.Arrays;
  * Created by manshu on 2/2/15.
  */
 public class Candy {
-    private static int candy(int[] ratings, int index) {
-        if (index == ratings.length) return 0;
-        if (index == 0 || ratings[index] <= ratings[index - 1]) {
-            if (index == (ratings.length - 1) || ratings[index + 1] > ratings[index]) {
-                ratings[index] = 1;
-                candy(ratings, index + 1);
-                return 1;
-            } else {
-                ratings[index] = 1 + candy(ratings, index + 1);
-            }
-        } else {
-            ratings[index] = 1 + ratings[index - 1];
-            candy(ratings, index + 1);
-        }
-        return 0;
-    }
-    
     public static int candy(int[] ratings) {
         //candy(ratings, 0);
         int[] candies = new int[ratings.length];
@@ -36,11 +19,11 @@ public class Candy {
 
         int numCandies = candies[ratings.length - 1];
         for (int i = ratings.length - 2; i >= 0; i--) {
-            if (ratings[i + 1] > ratings[i])
-                candies[i + 1] = Math.max(candies[i + 1], candies[i] + 1);
-            numCandies += candies[i + 1];
+            if (ratings[i] > ratings[i + 1] && candies[i] <= candies[i + 1])
+                candies[i] = candies[i + 1] + 1;
+            numCandies += candies[i];
         }
-        
+
         //for (Integer i : ratings) System.out.print(i + " ");
         return numCandies;
     }

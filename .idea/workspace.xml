@@ -31,10 +31,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="e#319#320#0" expanded="false" />
-                <element signature="e#357#358#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,16 +101,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PailindromePartitioning.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PailindromePartitioning.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backtracking/PailindromePartitioning.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4820144">
+            <state vertical-scroll-proportion="0.0">
               <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#523#537#0" expanded="true" />
-                <element signature="e#699#707#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Candy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Greedy/Candy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7546584">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -150,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Array/RotateImage.java" />
         <option value="$PROJECT_DIR$/src/General/MInterview/Qumulo_Sample.java" />
         <option value="$PROJECT_DIR$/src/General/FizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/General/VerticalOrderTraversal.java" />
@@ -201,6 +205,7 @@
         <option value="$PROJECT_DIR$/src/DynamicProgramming/HouseRobber.java" />
         <option value="$PROJECT_DIR$/src/String/CompareVersionNumbers.java" />
         <option value="$PROJECT_DIR$/src/Backtracking/PailindromePartitioning.java" />
+        <option value="$PROJECT_DIR$/src/Greedy/Candy.java" />
       </list>
     </option>
   </component>
@@ -219,10 +224,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-2" />
-    <option name="width" value="3856" />
-    <option name="height" value="2110" />
+    <option name="x" value="130" />
+    <option name="y" value="48" />
+    <option name="width" value="3710" />
+    <option name="height" value="2112" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -252,7 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
@@ -625,6 +629,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -654,27 +659,7 @@
       <recent name="Tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PailindromeNumber">
-    <configuration default="false" name="LongestBitonicSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="DynamicProgramming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="DynamicProgramming.LongestBitonicSequence" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algo_practice" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Candy">
     <configuration default="false" name="HouseRobber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -743,6 +728,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Math.PailindromeNumber" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algo_practice" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Candy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Greedy.Candy" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1072,19 +1077,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LongestBitonicSequence" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HouseRobber" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CompareVersionNumbers" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PailindromePartitioning" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PailindromeNumber" />
+      <item index="0" class="java.lang.String" itemvalue="Application.HouseRobber" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CompareVersionNumbers" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PailindromePartitioning" />
+      <item index="3" class="java.lang.String" itemvalue="Application.PailindromeNumber" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Candy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PailindromeNumber" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PailindromePartitioning" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CompareVersionNumbers" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HouseRobber" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LongestBitonicSequence" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Candy" />
+        <item index="1" class="java.lang.String" itemvalue="Application.PailindromeNumber" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PailindromePartitioning" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CompareVersionNumbers" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HouseRobber" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1215,28 +1220,29 @@
       <workItem from="1428813423438" duration="721000" />
       <workItem from="1428982014526" duration="611000" />
       <workItem from="1428983861260" duration="5779000" />
+      <workItem from="1429046975665" duration="15000" />
+      <workItem from="1429081787975" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="458495000" />
+    <option name="totallyTimeSpent" value="458561000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-2" width="3856" height="2110" extended-state="6" />
+    <frame x="130" y="48" width="3710" height="2112" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3250646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26426736" sideWeight="0.5005503" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25839794" sideWeight="0.49944964" order="2" side_tool="false" content_ui="tabs" x="1965" y="28" width="1895" height="2152" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31465295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31465295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.259375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25921848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1249,6 +1255,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3250646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1476,13 +1483,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/String/ZigZagConversion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DynamicProgramming/RegularExpression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1601,9 +1601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1710,7 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="71" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1726,10 +1722,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#319#320#0" expanded="false" />
-            <element signature="e#357#358#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1840,7 +1833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49208632">
           <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1848,19 +1840,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77697843">
           <caret line="49" column="15" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backtracking/PailindromePartitioning.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4820144">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#523#537#0" expanded="true" />
-            <element signature="e#699#707#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Greedy/Candy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7546584">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
