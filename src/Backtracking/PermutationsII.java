@@ -1,15 +1,16 @@
 package Backtracking;
 
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
- * Created by manshu on 3/11/15.
+ * Created by manshu on 4/15/15.
  */
-public class Permutations {
-
-    public static List<List<Integer>> permute(int[] num, int st) {
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
+public class PermutationsII {
+    public static Set<List<Integer>> permuteUnique(int[] num, int st) {
+        Set<List<Integer>> result = new LinkedHashSet<List<Integer>>();
         int n = num.length - st;
         if (n == 0) return result;
         List<Integer> temp = new ArrayList<Integer>();
@@ -19,7 +20,7 @@ public class Permutations {
             return result;
         }
 
-        List<List<Integer>> ahead = permute(num, st + 1);
+        Set<List<Integer>> ahead = permuteUnique(num, st + 1);
         for (List<Integer> list : ahead) {
             for (int i = 0; i <= list.size(); i++) {
                 temp = new ArrayList<Integer>(list.size() + 1);
@@ -36,13 +37,18 @@ public class Permutations {
         return result;
     }
 
-    public static List<List<Integer>> permute(int[] num) {
-        return permute(num, 0);
+    public static List<List<Integer>> permuteUnique(int[] num) {
+        Set<List<Integer>> sets = permuteUnique(num, 0);
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        for (List<Integer> list : sets) {
+            result.add(list);
+        }
+        return result;
     }
 
     public static void main(String[] args) {
-        int[] num = {1, 2, 3};
-        List<List<Integer>> result = permute(num);
+        int[] num = {1, 1, 2};
+        List<List<Integer>> result = permuteUnique(num);
         for (List<Integer> list : result)
             System.out.println(list);
     }
