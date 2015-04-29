@@ -28,7 +28,7 @@ public class DungeonGame {
         return cache[i][j];
     }
     
-    public static int calculateMinimumHP(int[][] dungeon) {
+    public static int calculateMinimumHPx(int[][] dungeon) {
         int m = dungeon.length, n = dungeon[0].length;
         cache = new int[dungeon.length][dungeon[0].length];
         int result = calculateMinimumHP(dungeon, 0, 0);
@@ -64,6 +64,43 @@ public class DungeonGame {
 //        else return -1 * min + 1;
     }
 
+
+
+    public static int calculateMinimumHP(int[][] dungeon) {
+        int M = dungeon.length, N = dungeon[0].length;
+        int[][] MH = new int[M][N];
+        if (dungeon[M - 1][N - 1] < 0) MH[M - 1][N - 1] = 1 + -1 * dungeon[M - 1][N - 1];
+        else if (dungeon[M - 1][N - 1] >= 0) MH[M - 1][N - 1] = 1;
+        for (int i = M - 1; i >= 0; i--) {
+            for (int j = N - 1; j >= 0; j--) {
+                if (i == (M - 1) && j == (N - 1)) continue;
+                int s;
+                if (dungeon[M - 1][N - 1] < 0) s = 1 + -1 * dungeon[M - 1][N - 1];
+                else s = 1;
+
+                int r1 = Integer.MAX_VALUE, r2 = Integer.MAX_VALUE;
+                if ((i + 1) < M) {
+                    int k = Math.max(-1 * dungeon[i][j] + MH[i + 1][j], 1);
+                    r1 = Math.max(s, k);
+                }
+                if ((j + 1) < N) {
+                    int k = Math.max(-1 * dungeon[i][j] + MH[i][j + 1], 1);
+                    r2 = Math.max(s, k);
+                }
+                MH[i][j] = Math.min(r1, r2);
+            }
+        }
+//        if (dungeon[0][0] == 0) {
+//            if (MH[0][0] > 0)
+//                return MH[0][0] + 1;
+//            else
+//                return MH[0][0];
+//        }
+//        else if (dungeon[0][0] < 0) return Math.max(MH[0][0] + 1, 1);
+//        else return Math.max(MH[0][0], 1);
+        return Math.max(MH[0][0], 1);
+    }
+
     public static void main(String[] args) {
         int arr2[][] = {
                 {-2, -3, 3},
@@ -71,7 +108,7 @@ public class DungeonGame {
                 {10, 30, -5},
         };
         
-        int arr3[][] = {{0, 5}, {-2, -3}};
+        int arr3[][] = {{0, -5}, {-2, -3}};
 
         System.out.println(calculateMinimumHP(arr2));
     }

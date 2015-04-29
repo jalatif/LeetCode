@@ -66,11 +66,11 @@ public class WordLadderII {
     }
 
     public static void main(String[] args) {
-        String start = "hot";
-        String end = "dog";
-        String words[] = {"hot", "dog"};
+        String start = "hit";
+        String end = "cog";
+        //String words[] = {"hot", "dog"};
         String words2[] = {"hot","dot","dog","lot","log", "cog"};
-        Set<String> dict = new HashSet<String>(Arrays.asList(words));
+        Set<String> dict = new HashSet<String>(Arrays.asList(words2));
         //for (String s : dict) System.out.println(s);
 
         System.out.println(findLadders(start, end, dict));
